@@ -9,13 +9,11 @@ left:0px;
 
 }
 
-.obj2{
-    position:absolute;
-    width:40px;
-    height:40px;
-    background:yellow;
-    background-size: cover;
-    top:120px;
-    left:120px;
-    
-    }
+.bicho{
+
+    width: 40px;
+    height: 40px;
+    top: 300px;
+    left:0px;
+    position: relative;
+}

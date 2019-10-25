@@ -3,7 +3,7 @@ document.addEventListener("keydown", tecla);
 function tecla(event) {
   var x = event.keyCode;
   const position_mia = $(".obj1").position();
-  const position_tuya = $(".obj2").position();
+  const position_tuya = $(".bicho").position();
   const bigW=$( ".obj1").width();
   const bigH=$( ".obj1").height();
   const top = position_mia.top - 10;
@@ -31,10 +31,10 @@ function tecla(event) {
   }
 
   if (
-    position_tuya.top - 40 < position_mia.top &&
-    position_tuya.top + 40 > position_mia.top &&
-    position_tuya.left - 40 < position_mia.left &&
-    position_tuya.left + 40 > position_mia.left
+    position_tuya.top - bigH < position_mia.top &&
+    position_tuya.top + bigH> position_mia.top &&
+    position_tuya.left - bigW < position_mia.left &&
+    position_tuya.left + bigW > position_mia.left
   ) {
     $( ".obj1").width(bigW_incr);
     $( ".obj1").height(bigH_incr);
@@ -42,3 +42,19 @@ function tecla(event) {
 
   
 }
+
+function hola(){
+
+const horizont =  Math.random() * (1260 - 0) 
+const vertical =  Math.random() * (570 - 0) 
+    $(".bicho").css("background-color", "yellow");
+    $(".bicho").css("left", horizont);
+    $(".bicho").css("top", vertical);
+  }
+
+
+  window.setInterval("hola()",2000);
+
+
+
+
