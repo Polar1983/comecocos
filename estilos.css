@@ -1,0 +1,21 @@
+.obj1{
+position:absolute;
+width:40px;
+height:40px;
+background:red;
+background-size:cover ;
+top:0px;
+left:0px;
+
+}
+
+.obj2{
+    position:absolute;
+    width:40px;
+    height:40px;
+    background:yellow;
+    background-size: cover;
+    top:120px;
+    left:120px;
+    
+    }
