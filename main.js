@@ -1,5 +1,15 @@
 document.addEventListener("keydown", tecla);
 
+function hola(){
+
+    const horizont =  Math.random() * (1260 - 0) 
+    const vertical =  Math.random() * (570 - 0) 
+        $(".bicho").css("background-color", "yellow");
+        $(".bicho").css("left", horizont);
+        $(".bicho").css("top", vertical);
+      }
+
+
 function tecla(event) {
   var x = event.keyCode;
   const position_mia = $(".obj1").position();
@@ -42,22 +52,16 @@ function tecla(event) {
   ) {
     $( ".obj1").width(bigW_incr);
     $( ".obj1").height(bigH_incr);
+    hola();
   }
 
   
 }
 
-function hola(){
-
-const horizont =  Math.random() * (1260 - 0) 
-const vertical =  Math.random() * (570 - 0) 
-    $(".bicho").css("background-color", "yellow");
-    $(".bicho").css("left", horizont);
-    $(".bicho").css("top", vertical);
-  }
 
 
-  window.setInterval("hola()",2000);
+
+  window.setInterval("hola()",5000);
 
 
 
