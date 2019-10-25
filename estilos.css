@@ -1,13 +1,17 @@
 .obj1{
-position:absolute;
-width:40px;
-height:40px;
-background:red;
-background-size:cover ;
-top:0px;
-left:0px;
+    position:absolute;
+    width: 34px;
+    height: 35px;
+    background-image: url(pacmanright.gif);
+    background-size: cover;
+    top:0px;
+    left:0px;
+    max-width:400px;max-height:400px;
+    border-radius: 92px;
+    box-shadow: 0px 0px 35px yellow;
+    background-size: 53px;
+    background-position: -9px -9px;}
 
-}
 
 .bicho{
 

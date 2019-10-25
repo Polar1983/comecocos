@@ -10,23 +10,27 @@ function tecla(event) {
   const bot = position_mia.top + 10;
   const rigth = position_mia.left + 10;
   const left = position_mia.left - 10;
-  const bigW_incr=bigW+20;
-  const bigH_incr=bigH+20;;
+  const bigW_incr=bigW+5;
+  const bigH_incr=bigH+5;;
 
 
   switch (x) {
     case 87:
       $(".obj1").css("top", top);
-      console.log(position_mia.top);
+      $(".obj1").css("background-image", "url(pacmanup.gif)");
       break;
     case 83:
       $(".obj1").css("top", bot);
+      $(".obj1").css("background-image", "url(pacmandown.gif)");
+      
       break;
     case 68:
       $(".obj1").css("left", rigth);
+      $(".obj1").css("background-image", "url(pacmanright.gif)");
       break;
     case 65:
       $(".obj1").css("left", left);
+      $(".obj1").css("background-image", "url(pacmanleft.gif)");
       break;
   }
 
