@@ -49,7 +49,6 @@ function tecla(event) {
     hola();
     $(".obj1").width(bigW_incr);
     $(".obj1").height(bigH_incr);
-
   }
-
+  
   window.setInterval("hola()", 10000);
