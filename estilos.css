@@ -1,5 +1,6 @@
 
-body{background-image:url(fondo1.jpg)}
+body{background-image:url(fondo1.jpg);
+    background-size: cover;}
 
 
     .gameover {
@@ -42,23 +43,15 @@ p.points {
 
 .bicho{
 
-    width: 58px;
-    height: 4px;
+    width: 40px;
+    height: 40px;
     top: 300px;
     left:0px;
     position: relative;
-    background-image:url("fanatasma.gif");
-    background-size:cover;
     
-}
-#fantasma{
-
-    width: 60px;
-    height: 60px;
     
 }
 
-#audio{
-    display: none
-    }
-}
+
+
+
