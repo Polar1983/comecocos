@@ -1,6 +1,34 @@
 document.addEventListener("keydown", tecla);
 
-function hola(){
+let punctuation=0;
+let finalone=0;
+
+
+
+
+
+function points(){
+punctuation+=100;
+
+$(".points").html(punctuation)
+
+
+
+
+
+}
+
+function final(){
+
+    finalone++;
+    $('.gameover').hide();
+
+    console.log(finalone)
+    if(finalone>= 60){$('.gameover').show();}
+    
+    }
+
+function phantom(){
 
     const horizont =  Math.random() * (1260 - 0) 
     const vertical =  Math.random() * (570 - 0) 
@@ -52,7 +80,8 @@ function tecla(event) {
   ) {
     $( ".obj1").width(bigW_incr);
     $( ".obj1").height(bigH_incr);
-    hola();
+    phantom();
+    points();
   }
 
   
@@ -61,7 +90,9 @@ function tecla(event) {
 
 
 
-  window.setInterval("hola()",5000);
+  window.setInterval("phantom()",5000);
+  window.setInterval("final()",1000);
+  
 
 
 
